@@ -1,1 +1,139 @@
+<!DOCTYPE html>
 
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oferta formativa</title>
+</head>
+
+<body>
+    <header>
+        <h1>Web IES Camp</h1>
+        <nav>
+            <ul>
+                <li><a href= "gradomedio.html">Requisitos acceso grado medio</a></li>
+                <li><a href= "gradosuperior.html">Requisitos acceso grado superior</a></li>
+                <li><a href= "informacion.html">Más info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+        <h2 style="color:blueviolet">Más Info</h2>
+            <form action="/action.page.php" method="post">
+                <fieldset>
+                    <legend>Información de contacto</legend> 
+                    <div style="margin-bottom: 15px">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" maxlength="100" placeholder="Nombre">
+                    </div>
+                    <div style="margin-bottom: 15px">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" maxlength="100" placeholder="Apellidos">
+                    </div>
+                    <div style="margin-bottom: 15px">
+                        <label for="edad">Edad:</label>
+                        <input type="number" name="edad" id="edad" placeholder="Edad" min="1" max="100" step="1">  
+                    </div>   
+                    <div style="margin-bottom: 15px">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" maxlength="100" placeholder="Email">
+                    </div>
+                    <div style="margin-bottom: 15px">
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" id="contraseña" name="contraseña" pattern="^[0-9][a-z]#.{3,}$" size="50" placeholder="Mín. 6 / debe comenzar por: 1numero+1letra+#">
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Formación</legend>
+                    Nivel de estudios:<br>
+                    <input type="radio" id="sin" name="tipo_estudios" value="sin"> 
+                    <label for="sin">Sin estudios</label><br>
+                    <input type="radio" id="bachillerato" name="tipo_estudios" value="bachillerato">
+                    <label for="bachillerato">Bachillerato</label><br>
+                    <input type="radio" id="fp" name="tipo_estudios" value="fp" checked>
+                    <label for="fp">Formación Profesional</label><br>
+                    <input type="radio" id="otros" name="tipo_estudios" value="otros">
+                    <label for="otros">Otros</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Información de estudios</legend>
+                    Deseo recibir información de:<br>
+                    <label for="estudios"></label>
+                    <select id="estudios" name="estudios">
+                        <option value="basica">FP Básica</option>
+                        <option value="medio">Grado Medio</option>
+                        <option value="superior" selected>Grado Superior</option>
+                        
+                    </select><br>
+                    
+                    <br>Escribe tu mensaje:
+                    <div style="margin-bottom: 30px">
+                    <textarea name="mensaje" rows="8" cols="40"></textarea>                
+                    </div>
+                </fieldset> 
+                <br>
+                <fieldset>
+                    <legend>Elección de horario</legend>
+                    Prefiero horario:<br>
+                    <input type="radio" id="mañana" name="horario" value="mañana" checked> 
+                    <label for="mañana">Mañana</label><br>
+                    <input type="radio" id="tarde" name="horario" value="tarde">
+                    <label for="tarde">Tarde</label><br>
+                    <input type="radio" id="indistinto" name="horario" value="indistinto">
+                    <label for="indistinto">Indistinto</label><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Modalidad</legend>
+                    Indica la modalidad en la que podrías realizar tus estudios (puedes elegir ambas):<br>
+                    <input type="checkbox" name="modalidad" value="presencial" checked>Presencial</label><br>
+                    <input type="checkbox" name="modalidad" value="semi" checked>Semipresencial</label><br>
+
+                    <br><input type="submit" value="Borrar Datos">
+                    <input type="submit" value="Enviar Datos">
+                </fieldset>
+                
+            </form>
+        </section>           
+    </main>
+    <br>
+    <footer>
+        <table align="center" cellpadding="10" cellspacing="0" border="1" style="border-collapse:collapse"  width="30%">
+            <tbody>
+                <tr>
+                    <td align="center" valign="middle">1</td>
+                    <td align="center" valign="middle">2</td>
+                    <td align="center" valign="middle" rowspan="3">3</td>
+                    <td align="center" valign="middle">4</td>                   
+                </tr>
+                <tr>
+                    <td align="center" valign="middle">5</td>
+                    <td align="center" valign="middle" rowspan="3">6</td>
+                    <td align="center" valign="middle" rowspan="2">8</td>   
+                </tr>
+                <tr>
+                    <td align="center" valign="middle">9</td>  
+                </tr>
+                <tr>
+                    <td align="center" valign="middle" rowspan="3">11</td>
+                    <td align="center" valign="middle">7</td>
+                    <td align="center" valign="middle">10</td>   
+                </tr>
+                <tr>
+                    <td align="center" valign="middle" colspan="3">12</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="middle">13</td>
+                    <td align="center" valign="middle" colspan="2">14</td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+</body>
+
+</html>
